@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Server.Controllers
+namespace WebUI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

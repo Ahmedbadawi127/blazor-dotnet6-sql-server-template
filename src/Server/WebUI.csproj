@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-	  <RootNamespace>Server</RootNamespace>
-	  <AssemblyName>Server</AssemblyName>
+	  <RootNamespace>WebUI</RootNamespace>
+	  <AssemblyName>WebUI</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

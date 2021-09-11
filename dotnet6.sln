@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "src\Client\Client.csproj", "{2FCD1076-61D3-4D61-A06E-ACB57BEE0485}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "src\Server\Server.csproj", "{8710F06F-DF11-4701-805C-CCCCB3EC16B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI", "src\Server\WebUI.csproj", "{8710F06F-DF11-4701-805C-CCCCB3EC16B2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{6F9E5605-B03D-4D77-B586-27826AC68B93}"
 EndProject
