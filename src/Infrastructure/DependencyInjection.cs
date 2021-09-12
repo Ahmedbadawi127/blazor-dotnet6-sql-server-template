@@ -18,7 +18,7 @@ namespace Infrastructure
             if (configuration.GetValue<bool>("UseInMemoryDatabase"))
             {
                 services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseInMemoryDatabase("test_dotnet_6_prev7Db"));
+                    options.UseInMemoryDatabase("dotnet6"));
             }
             else
             {
