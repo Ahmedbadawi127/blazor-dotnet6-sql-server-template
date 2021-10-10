@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Application</RootNamespace>
     <AssemblyName>Application</AssemblyName>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

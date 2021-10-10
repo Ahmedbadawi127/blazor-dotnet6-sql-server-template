@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-	  <RootNamespace>Client</RootNamespace>
-	  <AssemblyName>Client</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,9 +1,11 @@
+using Application;
 using Infrastructure;
 using Infrastructure.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,7 +27,7 @@ namespace WebUI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddApplication();
             services.AddInfrastructure(Configuration);
 
 
@@ -53,6 +55,15 @@ namespace WebUI
             });
 
             services.AddRazorPages();
+
+            // Customise default API behaviour
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            services.AddLocalization(options => options.ResourcesPath = "Localization");
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +74,7 @@ namespace WebUI
                 //app.UseDeveloperExceptionPage();
                 app.UseWebAssemblyDebugging();
             }
-           
+
                 app.UseExceptionHandler("/Error");
             // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 
